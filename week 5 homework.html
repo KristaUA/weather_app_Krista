@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css"/>
+    <title>Week 2 hw</title>
+  </head>
+  <style>
+    body {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    
+  </style>
+  <body>
+    <br />
+    <form id="search-form">
+    <div class="container">
+  <div class="row">
+    <div class="col-6">
+      <input class="search" id="city-input" type="text" placeholder="Enter a city" />
+    </div>
+    <div class="col">
+     <button class="search-button">Search</button>
+    </div>
+    <div class="col">
+      <button class="location-button">Current location</button>
+      </div>
+    </div>
+  </div>
+  </form>
+    <br />
+<form id="current-temperature">
+  <div class="container">
+  <div class="row">
+      <div class="col-6">
+        <h1 id="current-city">City</h1>
+        <ul>
+          <li id="current-day-time">Day, time</li>
+          <br />
+          <li>wind</li>
+        </ul>
+      </div>
+      <div class="col-6">
+       <div class="current-temperarture-container"> 
+        <div class="current-temperarture-picture">Picture</div>
+        <div id="current-temperature" class="col-3">
+          <span class="temperature" id="temperature">19</span
+                ><span class="units">
+                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+           
+        </div>
+      </div>
+    </div>
+    </div>  
+</form>
+<form id="forecast">
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <div class="weatherforecast-date"> Wed     
+      </div>
+      <img src="https://www.flaticon.com/free-icon/weather_1555512">
+<div class="weatherforecast-temperature"> 17     
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="weatherforecast-date"> Thu     
+      </div>
+      <img src="https://www.flaticon.com/free-icon/weather_1555512">
+<div class="weatherforecast-temperature"> 18     
+      </div>
+    </div>
+<div class="col-2">
+      <div class="weatherforecast-date"> Fri     
+      </div>
+      <img src="https://www.flaticon.com/free-icon/weather_1555512">
+<div class="weatherforecast-temperature"> 19     
+      </div>
+    </div>
+<div class="col-2">
+      <div class="weatherforecast-date"> Sat     
+      </div>
+      <img src="https://www.flaticon.com/free-icon/weather_1555512">
+<div class="weatherforecast-temperature"> 20     
+      </div>
+    </div>
+<div class="col-2">
+      <div class="weatherforecast-date"> Sun     
+      </div>
+      <img src="https://www.flaticon.com/free-icon/weather_1555512">
+<div class="weatherforecast-temperature"> 21     
+      </div>
+    </div>
+<div class="col-2">
+      <div class="weatherforecast-date"> Mon     
+      </div>
+      <img src="https://www.flaticon.com/free-icon/weather_1555512">
+<div class="weatherforecast-temperature"> 22     
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+  </body>
+  <script src="src/index.js"></script>
+</html>
