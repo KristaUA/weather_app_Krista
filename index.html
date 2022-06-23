@@ -14,54 +14,59 @@
     <link rel="stylesheet" href="src/style.css"/>
     <title>Weather_app_Krista</title>
   </head>
-  <style>
-    body {
-      margin-left: 20px;
-      margin-top: 10px;
-    }
-    
-  </style>
-  <body>
+   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
+      <div class="weather-app">
+      <div class="weather-info">
     <br />
-    <form id="search-form">
-    
-  <div class="row">
+    <form id="search-form" class="mb-4">
+    <div class="row">
     <div class="col-6">
-      <input class="search" id="city-input" type="text" placeholder="Enter a city" />
+      <input class="search" id="city-input" type="text" placeholder="Enter a city..." autocomplete="off"/>
     </div>
-    <div class="col">
+    <div class="col-3">
      <button class="search-button">Search</button>
     </div>
-    <div class="col">
+    <div class="col-3">
       <button class="location-button">Current location</button>
       </div>
     </div>
   </div>
   </form>
     <br />
-<form id="current-temperature">
-  <div class="container">
   <div class="row">
       <div class="col-6">
         <h1 id="current-city">City</h1>
         <ul>
-          <li id="current-day-time">Day, time</li>
+          <li> Last updated: <span id="current-day-time">Day, time</span></li>
           <br />
-          <li>wind</li>
+          <li> 
+            <img src="gifs/windy-weather.gif" alt="wind" width="35" class="float-left" />
+            <span id="wind-speed"> 4 </h></span>m/h
+          </li>
+          <li>
+            <img src="gifs/drop.gif" alt="humidity" width="35" class="float-left" />
+            <span id="humidity"> 35 </span>%
+          </li>
         </ul>
       </div>
       <div class="col-6">
        <div class="current-temperarture-container"> 
-        <div class="current-temperarture-picture">Picture</div>
-        <div id="current-temperature" class="col-3">
-          <span class="temperature" id="temperature">19</span
-                ><span class="units">
-                  <a href="#" id="celsius-link">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a>
-                </span>
-           
-        </div>
+          <div class="float-left">
+          <div class="description" id="description">Few clouds</div>
+          <br />
+          <span class="current-temperarture-picture col-6"> 
+          <image src="gifs/partly-cloudy-day.gif" alt = "main-gif" width="120" id ="main-image" class="float-left"> </image>
+          </span>
+        <span id="current-temperature" class="current-temperature " >
+        <span class="temperature float-left " id="temperature">19</span>         
+        <span class="units">
+          <a href="#" id="celsius-link">°C</a> |
+          <a href="#" id="fahrenheit-link">°F</a>
+        </span>
+      </span>
+      </div>
       </div>
     </div>
     </div>  
@@ -113,8 +118,11 @@
     </div>
   </div>
 </div>
+</div>
+</div>
+</div>
 </form>
-<footer> <a href="https://github.com/KristaUA/weather_app_Krista"> Open source </a> developed by Khrystyna Statnyk </footer>
+<footer> <a href="https://github.com/KristaUA/weather_app_Krista" target="_blank"> Open source </a> developed by Khrystyna Statnyk </footer>
   </body>
   <script src="src/index.js"></script>
 </html>
