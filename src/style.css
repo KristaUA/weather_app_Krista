@@ -1,3 +1,39 @@
+.body {
+  font-family: "Comfortaa", cursive;
+}
+.weather-app-wrapper {
+  max-width: 800px;
+  margin: 60px auto;
+}
+.weather-app {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgb(65 50 100 / 20%);
+  opacity: 90%;
+  padding: 15px;
+}
 .current-temperature {
   font-size: 50px;
+}
+
+h1 {
+  color: #212121;
+  font-size: 40px;
+  line-height: 28px;
+  padding: 0px 0px 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0px 0px 8px;
+  padding: 0;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
 }
