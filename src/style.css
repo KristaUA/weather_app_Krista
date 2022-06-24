@@ -1,7 +1,9 @@
 .body {
   font-family: "Comfortaa", cursive;
-  color: black;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/437/original/pexels-moose-photos-1037995.jpg?1656094281");
+  background-size: cover;
 }
+
 .weather-app-wrapper {
   max-width: 800px;
   margin: 60px auto;
