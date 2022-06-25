@@ -19,6 +19,17 @@ body {
   padding: 15px;
   opacity: 0.65;
 }
+.current-temperarture-container .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.current-temperarture-container .active:hover {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
 .current-temperature {
   font-size: 50px;
 }
@@ -44,6 +55,11 @@ li {
   font-weight: 100;
   line-height: 19px;
 }
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .current-temperarture-container {
   margin-top: 20px;
   padding: 0;
