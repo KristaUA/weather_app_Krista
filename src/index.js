@@ -71,7 +71,7 @@ let currentLocation = document.querySelector(".location-button");
 currentLocation.addEventListener("click", getLocation);
 
 //
-searchCity("New York");
+searchCity("Kyiv");
 
 //Converting celsius and fahrenheit
 
