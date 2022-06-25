@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css"/>
+    
     <title>Weather_app_Krista</title>
   </head>
-   <body background="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/437/original/pexels-moose-photos-1037995.jpg?1656094281">
+   <body>
       <div class="container">
       <div class="weather-app-wrapper">
       <div class="weather-app">
@@ -37,9 +39,9 @@
     <br />
   <div class="row">
       <div class="col-6">
-        <h1 id="current-city">City</h1>
+        <h1 id="current-city"></h1>
         <ul>
-          <li> Last updated: <span id="current-day-time">Day, time</span></li>
+          <li> Last updated: <span id="current-day-time"></span></li>
           <li class="description" id="description">Few clouds</li>
           <li> 
             <img src="gifs/windy-weather.gif" alt="wind" width="35" class=" wind-speed-gif float-left" />
@@ -56,7 +58,7 @@
           <div class="current-temperarture-picture"> 
           <image src="gifs/partly-cloudy-day.gif" alt = "main-gif" id ="main-image" class="float-left"> </image>
         <span id="current-temperature" class="float-left current-temperature" >
-        <span class="temperature" id="temperature">19</span>         
+        <span class="temperature" id="temperature"></span>         
         <span class="units">
           <a href="#" id="celsius-link">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a>

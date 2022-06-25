@@ -1,6 +1,6 @@
-.body {
+body {
   font-family: "Comfortaa", cursive;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/437/original/pexels-moose-photos-1037995.jpg?1656094281");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/493/original/pexels-pixabay-262713.jpg?1656152443");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -71,4 +71,10 @@ li {
 
 .wind-speed-gif {
   animation: anim-ss steps(23) 1s infinite;
+}
+
+footer {
+  margin-left: 10px;
+  font-size: 12px;
+  color: black;
 }
