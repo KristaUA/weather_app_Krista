@@ -89,7 +89,19 @@ li:first-letter {
 .wind-speed-gif {
   animation: anim-ss steps(23) 1s infinite;
 }
+.weather-forecast {
+  text-align: center;
+}
 
+.weatherforecast-date {
+  font-size: 16px;
+}
+.weatherforecast-temperature {
+  font-size: 14px;
+}
+.weatherforecast-temperature-min {
+  opacity: 0.6;
+}
 footer {
   margin-left: 10px;
   font-size: 12px;
