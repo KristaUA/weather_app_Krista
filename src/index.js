@@ -96,6 +96,12 @@ function convertToCelsius(event) {
   fahrenheitLink.classList.remove("active");
 }
 
+//forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+}
+
 let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
