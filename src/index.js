@@ -100,7 +100,37 @@ function convertToCelsius(event) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2">
+      <div class="weatherforecast-date"> ${day}    
+      </div>
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/544/original/icons8-storm.gif?1656177125" width="42">
+  <div class="weatherforecast-temperature">
+  <span class="weatherforecast-temperature-max"> 17 ° </span>
+  <span class="weatherforecast-temperature-min"> 15 ° </span>    
+      </div>
+  </div>
+`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
+
+// Generalised
 
 let celsiusTemperature = null;
 
@@ -110,4 +140,5 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
+displayForecast();
 searchCity("Kyiv");
