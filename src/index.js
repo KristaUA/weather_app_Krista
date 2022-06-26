@@ -79,25 +79,6 @@ function getLocation() {
 let currentLocation = document.querySelector(".location-button");
 currentLocation.addEventListener("click", getLocation);
 
-//Converting celsius and fahrenheit
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-}
-
 //forecast
 
 function displayForecast(response) {
@@ -127,9 +108,9 @@ function displayForecast(response) {
         forecastDay.weather[0].icon
       }@2x.png" width="42">
   <div class="weatherforecast-temperature">
-  <span class="weatherforecast-temperature-max"> ${Math.round(
+  <span class="weatherforecast-temperature-max"> <strong> ${Math.round(
     forecastDay.temp.max
-  )} ° </span>
+  )} ° </strong> </span>
   <span class="weatherforecast-temperature-min"> ${Math.round(
     forecastDay.temp.min
   )} ° </span>    
@@ -159,13 +140,5 @@ function formatDay(timestamp) {
   return days[day];
 }
 // Generalised
-
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
 
 searchCity("Kyiv");
