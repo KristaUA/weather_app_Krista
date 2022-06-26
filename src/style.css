@@ -9,7 +9,7 @@ body {
 
 .weather-app-wrapper {
   max-width: 800px;
-  margin: 60px auto;
+  margin: 30px auto;
 }
 .weather-app {
   background: white;
@@ -48,7 +48,7 @@ ul {
 
 li {
   list-style: none;
-  margin: 0px 0px 8px;
+  margin: 5px 0px 20px;
   padding: 0;
   color: black;
   font-size: 16px;
