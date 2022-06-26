@@ -101,7 +101,7 @@ function convertToCelsius(event) {
 //forecast
 
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#weather-forecast");
 
@@ -114,17 +114,17 @@ function displayForecast(response) {
     "Friday",
     "Saturday",
   ];
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
   <div class="col-2">
-      <div class="weatherforecast-date"> ${day}    
+      <div class="weatherforecast-date"> ${forecastDay.dt}    
       </div>
-      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/544/original/icons8-storm.gif?1656177125" width="42">
+      <img src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="42">
   <div class="weatherforecast-temperature">
-  <span class="weatherforecast-temperature-max"> 17 ° </span>
-  <span class="weatherforecast-temperature-min"> 15 ° </span>    
+  <span class="weatherforecast-temperature-max"> ${forecastDay.temp.max} ° </span>
+  <span class="weatherforecast-temperature-min"> ${forecastDay.temp.min} ° </span>    
       </div>
   </div>
 `;
